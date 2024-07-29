@@ -11,10 +11,14 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'book_database'
+    // host: 'localhost',
+    // user: 'root',
+    // password: '',
+    // database: 'book_database'
+    host: 'sql.freedb.tech',
+    user: 'freedb_23008417',
+    password: 'jjWj&#V7aW*b#e8',
+    database: 'freedb_book_database'
 });
 
 connection.connect(err => {
